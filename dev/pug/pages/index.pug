@@ -1,0 +1,37 @@
+extends ../layout/main
+
+block head 
+  - var title = 'Строительство из бревна и бруса по Нижегородской области' 
+  - var bodyClass = '' 
+block content
+  main.content
+    .container
+      .row
+        .col
+          //- .catalog: img(src="img/general/catalog.png", alt="image")
+          h1.h1 Получите доступ к каталогу <br> уникальных проектов домов из бревна, <br> изготовленных нами за 5 лет
+      .row.advant
+        .col-lg-4
+          .advant__item
+            .advant__title Более 175 проектов
+            .advant__desc Изготовленных нашими <br>архитекторами по всей России
+        .col-lg-4
+          .advant__item
+            .advant__title Уникальный дизайн
+            .advant__desc Все модели разработаны<br> нашими дизайнерами
+      .row
+        .col
+          - formTitle = 'Получите доступ к каталогу'
+          +form_default('formClass', 'formId')
+
+
+
+
+
+
+  a(class="dwnlink", data-auto-download, href='file/note.pdf', target="_blank")
+
+
+
+
+
